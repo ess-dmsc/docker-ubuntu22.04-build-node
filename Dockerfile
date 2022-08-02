@@ -11,7 +11,7 @@ RUN apt-get update && \
     apt-get -y autoremove && \
     apt-get clean all
 
-RUN pip3 install conan==1.51.0 coverage==4.4.2 flake8==3.5.0 gcovr==4.1 && \
+RUN pip3 install conan==1.51.0 coverage==4.4.2 flake8==3.5.0 gcovr==4.1 sphinx<=5 breathe && \
     rm -rf /root/.cache/pip/*
 
 ENV CONAN_USER_HOME=/conan
