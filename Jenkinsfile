@@ -7,7 +7,7 @@ properties([
   disableConcurrentBuilds(abortPrevious: true)
 ])
 
-imageVersion = '1.2.0'
+imageVersion = '1.3.0'
 
 imageName = "dockerregistry.esss.dk/ecdc_group/build-node-images/ubuntu22.04-build-node:${imageVersion}"
 
