@@ -12,6 +12,9 @@ RUN apt-get update && \
     apt-get -y autoremove && \
     apt-get clean all
 
+# Temporary solution due to CentOS 7's old kernel.
+RUN strip --remove-section=.note.ABI-tag /usr/lib/x86_64-linux-gnu/libQt5Core.so.5
+
 RUN pip3 install conan==1.51.0 coverage==4.4.2 flake8==3.5.0 gcovr==4.1 'sphinx<=5' breathe && \
     rm -rf /root/.cache/pip/*
 
