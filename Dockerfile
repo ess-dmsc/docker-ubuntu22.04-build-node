@@ -44,11 +44,6 @@ RUN cd /tmp && \
     rm -rf cppcheck-2.7 && \
     rm -rf cppcheck.tar.gz
 
-RUN git clone https://github.com/ess-dmsc/build-utils.git && \
-    cd build-utils && \
-    git checkout c05ed046dd273a2b9090d41048d62b7d1ea6cdf3 && \
-    make install
-
 RUN adduser --disabled-password --gecos "" jenkins
 
 RUN chown -R jenkins $CONAN_USER_HOME/.conan
