@@ -20,6 +20,7 @@ RUN apt-get update && \
         graphviz \
         lcov \
         libreadline-dev \
+        libsasl2-dev \
         libssl-dev \
         libtool \
         mpich \
