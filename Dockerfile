@@ -5,10 +5,33 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
     apt-get -y upgrade && \
-    apt-get -y install clang-format cloc doxygen gcc g++ git graphviz \
-        cmake flex lcov mpich python3-pip valgrind vim-common tzdata \
-        autoconf automake libtool perl ninja-build curl libssl-dev libreadline-dev \
-        qtbase5-dev && \
+    apt-get -y install \
+        autoconf \
+        automake \
+        clang-format \
+        cloc \
+        cmake \
+        curl \
+        doxygen \
+        flex \
+        g++ \
+        gcc \
+        git \
+        graphviz \
+        lcov \
+        libreadline-dev \
+        libsasl2-dev \
+        libssl-dev \
+        libtool \
+        mpich \
+        ninja-build \
+        perl \
+        python3-pip \
+        qtbase5-dev \
+        tzdata \
+        valgrind \
+        vim-common \
+        && \
     apt-get -y autoremove && \
     apt-get clean all
 
