@@ -38,7 +38,7 @@ RUN apt-get update && \
 # Temporary solution due to CentOS 7's old kernel.
 RUN strip --remove-section=.note.ABI-tag /usr/lib/x86_64-linux-gnu/libQt5Core.so.5
 
-RUN pip3 install conan==1.51.0 coverage==4.4.2 flake8==3.5.0 gcovr==4.1 'sphinx<=5' breathe && \
+RUN pip3 install conan==1.53.0 coverage==4.4.2 flake8==3.5.0 gcovr==4.1 'sphinx<=5' breathe && \
     rm -rf /root/.cache/pip/*
 
 ENV CONAN_USER_HOME=/conan
