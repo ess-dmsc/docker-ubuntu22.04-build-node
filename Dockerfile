@@ -48,7 +48,7 @@ RUN mkdir $CONAN_USER_HOME && \
 
 RUN git clone http://github.com/ess-dmsc/conan-configuration.git && \
     cd conan-configuration && \
-    git checkout 93c179905be4cc4b805bd6fb43d55f973f6ded95 && \
+    git checkout 5b1a947b11852a2022e8b81755a731ca4b25cdcd && \
     cd .. && \
     conan config install conan-configuration
 
